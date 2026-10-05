@@ -1,0 +1,12 @@
+services:
+  codex-chatbot:
+    build: .
+    container_name: codex-welzijn-chatbot
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./chroma_db_opslag:/app/chroma_db_opslag
+      - ./deployment/chroma_seed:/app/deployment/chroma_seed
+    env_file:
+      - .env
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+.env
+chroma_db_opslag/
+__pycache__/
+.venv/
+deployment/chroma_seed/*
+!deployment/chroma_seed/.gitkeep
+!deployment/chroma_seed/fd6baef73f890ed5ee31-azure-text-embedding-3-small/
+!deployment/chroma_seed/fd6baef73f890ed5ee31-azure-text-embedding-3-small/**
